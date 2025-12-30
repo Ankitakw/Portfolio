@@ -13,12 +13,12 @@ export function HeroSection() {
     <section className="min-h-screen relative overflow-hidden">
       {/* Asymmetric Background */}
       <div className="absolute inset-0 bg-gradient-hero" />
-      
+
       {/* Decorative Shapes */}
       <div className="absolute top-20 right-[10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "-4s" }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/5 rounded-full animate-rotate-slow" />
-      
+
       {/* Morphing Shape */}
       <div className="absolute top-1/4 right-[15%] w-64 h-64 bg-gradient-to-br from-primary/20 to-accent/20 animate-morph hidden lg:block" />
 
@@ -74,7 +74,7 @@ export function HeroSection() {
                 className="px-8 py-6 rounded-full border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
                 asChild
               >
-                 <a href="/Ankita_Waghmare_Resume.pdf" download="Ankita_Waghmare_Resume.pdf">
+                <a href="/Ankita_Waghmare_Resume.pdf" download="Ankita_Waghmare_Resume.pdf">
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
                 </a>
@@ -112,12 +112,14 @@ export function HeroSection() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 rounded-full border border-accent/20" />
               </div>
-              
+
               {/* Center Element */}
-              <div className="relative w-72 h-72 rounded-full bg-gradient-to-br from-primary/20 via-card to-accent/20 flex items-center justify-center shadow-glow">
-                <span className="font-display text-8xl font-bold text-gradient">
-                  {personal.firstName[0]}{personal.lastName[0]}
-                </span>
+              <div className="relative w-72 h-72 rounded-full overflow-hidden shadow-glow">
+                <img
+                  src="/profile.jpeg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating Labels */}
